@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+	<h3 id="titulo">REGISTRO DE ALUMNOS</h3>
+	<hr>    
+	<div id="form">		
+		<label>Nombre</label> <br>
+		<input type="text" id="nombre" class="caja"><br>
+		<label>Curso</label> <br>
+		<select name="curso" id="Cursos" class="caja">
+		<option selected disabled hidden style="display: none" value="" id="nothing"></option>
+		<option value="LP">LP</option>
+		<option value="BD">BD</option>
+		<option value="IR">IR</option>
+		</select><br>
+		<label>Nota 1</label> <br>
+		<input type="number" id="nota1" class="caja"><br>
+		<label>Nota 2</label> <br>
+		<input type="number" id="nota2" class="caja"><br>
+		<label>Nota 3</label> <br>
+		<input type="number" id="nota3" class="caja"><br>
+		<button onclick="agregar()" class="boton" id="b1">Guardar</button>
+		<button onclick="modificar()" class="boton" id="b2">Modificar</button>
+	</div>
+	<h3 id="name"></h3>
+	<table id="data">
+		<thead>
+		<tr>
+			<th>Curso</th>
+			<th>Nota 1</th>
+			<th>Nota 2</th>
+			<th>Nota 3</th>
+			<th>Promedio</th>
+			<th colspan="2">Acciones</th>
+		</tr>
+	    </thead>
+	</table>
+	<label id="ponderado"></label>
+</body>
+<script src="js/script.js"></script>
+</html>
